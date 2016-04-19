@@ -1,0 +1,1 @@
+# quranic_temper_detection
