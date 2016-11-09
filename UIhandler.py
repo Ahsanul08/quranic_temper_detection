@@ -1,10 +1,6 @@
 from PyQt4 import QtCore, QtGui
-# -*- coding: UTF-8 -*-
 from load_picle_copy import data_process
-
-outputData = u'''
-    الإيمان بالله
-'''
+import threading 
 
 class FormGui(QtGui.QWidget):
     def __init__(self, parent=None):
@@ -36,6 +32,7 @@ class FormGui(QtGui.QWidget):
     
     def doEval(self):
         self.urlLineEdit.setReadOnly(True)
+
         self.addressText.setHtml(data_process(str(self.urlLineEdit.text())))
         # self.addressText.setText(outputData)
         

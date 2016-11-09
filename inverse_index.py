@@ -30,4 +30,3 @@ for sura_number in xrange(114):
 with open('output.pickle','wb') as f:
     pickle.dump(inverse_dict,f)
 
-
