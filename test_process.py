@@ -4,7 +4,7 @@ except:
     import pickle
 
 from parse_html import parse
-from zaro_winkler import zaro_calculator
+from zaro_winkler import zaro_calculate
 import json
 
 url = 'http://abuaminaelias.com/brotherhood-in-the-quran-and-sunnah/'
@@ -44,6 +44,6 @@ for value in parse(url):
                 if input_word == compare_word:
                     count += 1.0
                 else:
-                    count += zaro_calculator(input_word, compare_word)
+                    count += zaro_calculate(input_word, compare_word)
             print count/len(words)*100
     print "---------------------------------->"
